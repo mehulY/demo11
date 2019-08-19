@@ -1,14 +1,32 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+  	<ion-navbar>
+    	<ion-title>
+      		Ionic Blank
+    	</ion-title>
+  	</ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content >
+	<button ion-button clear (click)='navigateToAboutPage()'>About</button>
+    <ion-searchbar  (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list>
+        <ion-item *ngFor="let item of items">
+            {{item}}
+        </ion-item>
+    </ion-list>
+  	<ion-list>
+      <ion-item *ngFor="let number of reality">
+      <p>{{number}}</p>
+      <p>
+                The most popular industrial group ever, and largely responsible for bringing the music to a mass audience.
+            </p>
+  </ion-item>
+      <ion-item>
+  		<pre *ngFor="let child of data">
+  			{{ child | json }}
+  		</pre>
+  	</ion-item>
+
+    </ion-list>
+  
 </ion-content>

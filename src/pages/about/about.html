@@ -1,0 +1,141 @@
+<!--
+  Generated template for the AboutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>about</ion-title>
+  </ion-navbar>
+</ion-header>
+	<!-- <ion-item *ngFor="let items of data">
+		<pre>
+			{{items | json}}
+		</pre>
+	</ion-item> -->
+<ion-content class="about">
+	<button ion-button clear (click)="consoleData()">Console data</button>
+	<ion-list>
+		<ion-item *ngFor="let items of scripted">
+			<ion-col><ion-row>{{items.id}}</ion-row></ion-col>
+			<ion-col><ion-row>{{items.url}}</ion-row></ion-col>
+		</ion-item>
+	</ion-list>
+  <!-- <ion-row class="recent">
+  <ion-col col-12 col-xl-3 col-lg class="section-title">
+    <h2>Recent</h2>
+    <span>Satsang</span>
+    <div class="view">View all</div>
+  </ion-col>  
+
+   <ion-col col-12 col-lg col-xl-9>
+     <ion-slides>
+       <ion-slide class="re-img" *ngFor="let prod of productData">
+         <div class="recent-thumb">
+                  <div class="clip">
+                    <img src="{{prod.img}}" /> 
+                   </div>
+                   <div class="text">
+                      <div>{{prod.Name}}</div>
+                     <span>{{prod.Price}}</span>
+                   </div>
+               </div>
+       </ion-slide>       
+     </ion-slides>
+   </ion-col> 
+ </ion-row> -->
+ <!-- <ion-grid no-padding>
+    <ion-row>
+      <ion-col no-padding col-6 col-md-3 *ngFor="let product of Products">
+        <ion-card>
+          <img [src]="product.img"/>
+          <ion-card-content>
+            <ion-card-title no-padding>
+              {{product.Name}}
+            </ion-card-title>
+            <ion-row no-padding class="center">
+              <ion-col>
+                <b>{{product.Price | currency }} &nbsp; </b> <span class="discount">{{product.listPrice | currency}}</span> 
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+  <ion-grid>
+    <ion-row class="bg_img">
+      <ion-slides>
+        <ion-slide col-6 col-md-3>
+          <ion-col col-6 col-md-3>
+            <ion-card>
+              <img src="../../assets/imgs/HT-1001.jpg">
+              <ion-card-content>
+                <ion-card-title>
+                  <h5>Products</h5>
+                </ion-card-title>
+                <ion-row class="center">
+                  <ion-col>
+                    <b>200 Rs.</b><span>100 Rs.</span>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-slide>
+        <ion-slide col-6 col-md-3>
+          <ion-col col-6 col-md-3>
+            <ion-card>
+              <img src="../../assets/imgs/HT-1001.jpg">
+              <ion-card-content>
+                <ion-card-title>
+                  <h5>Products</h5>
+                </ion-card-title>
+                <ion-row class="center">
+                  <ion-col>
+                    <b>200 Rs.</b><span>100 Rs.</span>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-slide>
+        <ion-slide col-6 col-md-3>
+          <ion-col col-6 col-md-3>
+            <ion-card>
+              <img src="../../assets/imgs/HT-1001.jpg">
+              <ion-card-content>
+                <ion-card-title>
+                  <h5>Products</h5>
+                </ion-card-title>
+                <ion-row class="center">
+                  <ion-col>
+                    <b>200 Rs.</b><span>100 Rs.</span>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-slide>
+        <ion-slide col-6 col-md-3>
+          <ion-col col-6 col-md-3>
+            <ion-card>
+              <img src="../../assets/imgs/HT-1001.jpg">
+              <ion-card-content>
+                <ion-card-title>
+                  <h5>Products</h5>
+                </ion-card-title>
+                <ion-row class="center">
+                  <ion-col>
+                    <b>200 Rs.</b><span>100 Rs.</span>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
+</ion-content>
